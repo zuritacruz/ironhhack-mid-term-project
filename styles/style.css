@@ -12,6 +12,11 @@ body {
     background-color: #F2F4FC;
 }
 
+.blue-hover-btns:hover {
+    background-color: #292e47;
+}
+
+/* Header & Navbar Section  */
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,7 +30,7 @@ body {
 }
 
 .header .burger-menu-btn {
-    padding: 16.5px 18px;
+    padding: 16px 18px;
 }
 
 .header .burger-icon {
@@ -61,26 +66,183 @@ body {
     cursor: pointer;
 }
 
-.contact-us-btn:hover {
-    background-color: #292e47;
+/* Hero Section  */
+.hero-section {
+    padding: 0 30px;
 }
 
+.hero-container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.hero-heading {
+    color: #292e47;
+    font-size: 30px;
+    margin: 20px 0 30px 0;
+    text-align: center;
+    line-height: 39px;
+}
+
+.hero-text {
+    text-align: center;
+    margin: 0 0 40px;
+    max-width: 600px;
+    color: #6b708d;
+    line-height: 25.5px;
+}
+
+.hero-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-in-touch-btn {
+    padding: 15px 30px;
+    margin: 0 0 20px 0;
+    background-color: #072ac8;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.see-our-work-btn {
+    color: #6b708d;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero-content-img {
+    position: relative;
+}
+
+.hero-img {
+    max-width: 100%;
+    width: 560px;
+}
+
+.hero-img-card-1 {
+    display: none;
+    width: 294px;
+    position: absolute;
+    left: -19%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+}
+
+.hero-img-card-2 {
+    display: none;
+    width: 290px;
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -25%;
+    bottom: -22%;
+}
+
+/* Logos Section  */
+.logos-section {
+    padding: 0 30px;
+}
+
+.logos-container {
+    margin-top: 40px;
+}
+
+.logos-grid {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-column-gap: 20px;
+    grid-auto-columns: 1fr;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo-img-container {
+    width: 120px;
+    display: flex;
+    height: 96px;
+    max-height: 96px;
+    max-width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 
 /* ----------------- MEDIA QUERIES ------------------ */
 
 /* Small devices (mobiles) */
 @media (min-width: 576px) {
+    /* Hero Section  */
+    .hero-heading {
+        font-size: 40px;
+        line-height: 52px;
+    }
 
+    .hero-btns {
+        flex-direction: row;
+    }
+    
+    .get-in-touch-btn {
+        margin: 0 40px 0 0;
+    }
+
+    /* Logos Section  */
+    .logos-container {
+        margin-top: 130px;
+    }
+
+    .logos-grid {
+        grid-column-gap: 50px;
+    }
 }
 
 /* Medium devices (tablets) */
 @media (min-width: 768px) {
+    /* Hero Section  */
+    .hero-heading {
+        font-size: 60px;
+        line-height: 78px;
+    }
 
+    .hero-text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .hero-img-card-1, .hero-img-card-2 {
+        display: inline-block;
+    }
 }
 
 /* Large devices (desktops) */
 @media (min-width: 992px) {
+    /* Header & Navbar Section  */
     .header {
         max-width: 1100px;
         margin: 0 auto;
@@ -98,6 +260,52 @@ body {
 
     .contact-us-btn {
         display: flex;
+    }
+
+    /* Hero Section  */
+    .hero-section {
+        padding-top: 100px;
+    }
+
+    .hero-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-content {
+        max-width: 530px;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .hero-heading, .hero-text {
+        text-align: start;
+    }
+
+    .hero-text {
+        max-width: 435px;
+    }
+
+    .hero-btns {
+        flex-direction: row-reverse;
+    }
+
+    .get-in-touch-btn {
+        margin-left: 20px;
+    }
+
+    /* Logos Section  */
+    .logos-container {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logos-grid {
+        grid-auto-columns: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 16px;
+        grid-template-rows: auto;
     }
 }
 
