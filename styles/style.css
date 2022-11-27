@@ -435,6 +435,7 @@ body {
 
 .question-form {
     display: flex;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -444,6 +445,7 @@ body {
 
 .email-form {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -466,7 +468,7 @@ body {
 
 .user-email {
     display: block;
-    width: 393px;
+    width: 100%;
     height: 80px;
     padding: 8px 12px;
     padding-left: 70px;
@@ -547,6 +549,11 @@ body {
     /* Services Section  */
     .services-heading {
         font-size: 40px;
+    }
+
+    /* Question Form Section  */
+    .user-email {
+        width: 393px;
     }
 }
 
