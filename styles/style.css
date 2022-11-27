@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 17px;
     background-color: #F2F4FC;
+    color: #292e47;
 }
 
 .blue-hover-btns:hover {
@@ -88,7 +89,6 @@ body {
 }
 
 .hero-heading {
-    color: #292e47;
     font-size: 30px;
     margin: 20px 0 30px 0;
     text-align: center;
@@ -197,7 +197,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #292e47;
 }
 
 .projects-grid {
@@ -329,6 +328,178 @@ body {
     display: none;
 }
 
+/* Services Section  */
+.services-section {
+    margin-top: 40px;
+}
+
+.services-heading {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.services-collection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.service-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.service-icon-1 {
+    background-image: url(../assets/services-section/icons/1.svg);
+}
+
+.service-icon-2 {
+    background-image: url(../assets/services-section/icons/2.svg);
+}
+
+.service-icon-3 {
+    background-image: url(../assets/services-section/icons/3.svg);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: #ecf7ff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto;
+}
+
+.service-heading {
+    margin: 30px 30px 20px;
+    font-size: 24px;
+    line-height: 27.6px;
+    font-weight: 500;
+}
+
+.service-text {
+    margin: 0 30px 10px;
+    line-height: 19.5px;
+}
+
+.service-link {
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px;
+    font-weight: 500;
+    color: #072ac8;
+}
+
+/* Question Form Section  */
+.question-section {
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    background-color: #ffc600;
+}
+
+.question-container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-heading {
+    font-size: 30px;
+    margin: 20px 0;
+    line-height: 44px;
+}
+
+.question-text {
+    color: #6b708d;
+    margin: 0;
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-input {
+    position: relative;
+}
+
+.email-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    position: absolute;
+    top: 27%;
+    left: 8%;
+    bottom: auto;
+    right: auto;
+}
+
+.user-email {
+    display: block;
+    width: 393px;
+    height: 80px;
+    padding: 8px 12px;
+    padding-left: 70px;
+    font-size: 16px;
+    background-color: #ecf7ff;
+    border: 1px solid #cccccc;
+}
+
+.user-email::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.user-email:focus {
+    outline: none;
+    border: 1px solid #949494;
+}
+
+.subscribe-btn {
+    display: block;
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 60px;
+    background-color: #072ac8;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+}
+
 
 /* ----------------- MEDIA QUERIES ------------------ */
 
@@ -370,6 +541,11 @@ body {
 
     /* Testimonial Section  */
     .testimonial-heading {
+        font-size: 40px;
+    }
+
+    /* Services Section  */
+    .services-heading {
         font-size: 40px;
     }
 }
@@ -463,6 +639,40 @@ body {
         right: 0%;
         margin-bottom: 5%;
         margin-right: 10%;
+    }
+
+    /* Services Section  */
+    .services-heading {
+        text-align: start;
+    }
+
+    .services-collection {
+        margin-top: 70px;
+        flex-direction: row;
+    }
+
+    .service-card {
+        max-width: 340px;
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    .service-card:last-of-type {
+        margin-right: 0;
+    }
+
+    /* Question Form Section  */
+    .question-heading {
+        font-size: 40px;
+    }
+
+    .email-form {
+        flex-direction: row;
+    }
+
+    .subscribe-btn {
+        margin-top: 0;
+        margin-left: 20px;
     }
 }
 
@@ -559,6 +769,32 @@ body {
     .testimonial-emoji {
         width: 150px;
         height: 150px;
+    }
+
+    /* Service Section  */
+    .services-section {
+        margin-top: 200px;
+    }
+
+    .services-container {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Question Form Section  */
+    .question-section {
+        margin-top: 200px;
+        height: 500px;
+        max-width: 1320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .question-container {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
