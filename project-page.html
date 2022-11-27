@@ -8,18 +8,87 @@
         <title>Circle Agency</title>
     </head>
     <body>
-        <header id="header" class="header">
+        <!-- Header & Narvbar Section  -->
+        <header id="header" class="header container-padding">
+            <img src="./assets/logos/circle.svg" alt="Circle Agency Logo" class="navbar-logo">
             <nav class="navbar">
                 <a href="./home.html" class="nav-item nav-home">Home</a>
                 <a href="#" class="nav-item">Projects</a>
                 <a href="#" class="nav-item">Services</a>
             </nav>
-            <img src="./assets/logos/circle.svg" alt="Circle Agency Logo" class="navbar-logo">
             <div class="burger-menu-btn">
                 <img src="./assets/hero-section/burger-menu-icon.png" alt="Hamburguer menu icon" class="burger-icon">
             </div>
-            <a href="./contact-page.html" class="contact-us-btn">Contact Us</a>
+            <a href="./contact-page.html" class="contact-us-btn blue-hover-btns">Contact Us</a>
         </header>
+
+
+
+        <!-- Projects Section  -->
+        <section id="projects-section" class="projects-section container-padding">
+            <div class="projects-section-container">
+                <h2 class="projects-heading">Other Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-box">
+                        <img src="./assets/projects-section/1.jpg" alt="Colorful cubes image" class="project-box-img">
+                        <div class="project-box-content">
+                            <h3 class="project-box-heading">Simplify</h3>
+                            <p class="project-box-text">UI Design & App Development</p>
+                            <a href="#" class="project-learn-more">Learn More</a>
+                        </div>
+                    </article>
+                    <article class="project-box">
+                        <img src="./assets/projects-section/2.jpg" alt="Colorful discs image" class="project-box-img">
+                        <div class="project-box-content">
+                            <h3 class="project-box-heading">Dashcoin</h3>
+                            <p class="project-box-text">Web Development</p>
+                            <a href="#" class="project-learn-more">Learn More</a>
+                        </div>
+                    </article>
+                    <article class="project-box">
+                        <img src="./assets/projects-section/3.jpg" alt="Colorful cube and sphere image" class="project-box-img">
+                        <div class="project-box-content">
+                            <h3 class="project-box-heading">Vertorify</h3>
+                            <p class="project-box-text">User Experience Design</p>
+                            <a href="#" class="project-learn-more">Learn More</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Qeuestion Form Section  -->
+        <section id="question-section" class="question-section container-padding">
+            <div class="question-container">
+                <h2 class="question-heading">Do you have any questions?</h2>
+                <p class="question-text">Let us help you!</p>
+                <div class="question-form">
+                    <form id="email-form" class="email-form" name="email-form" method="get">
+                        <div class="email-input">
+                            <img src="./assets/newsletter/icon/mail.svg" alt="Email icon" class="email-icon">
+                            <input type="email" class="user-email" name="user-email" placeholder="Enter your email">
+                        </div>
+                        <input type="submit" value="Subscribe" class="subscribe-btn blue-hover-btns">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Footer Section  -->
+        <footer id="footer-section" class="footer-section container-padding">
+            <div class="footer-container">
+                <div class="footer-info">
+                    <img src="./assets/logos/circle.svg" alt="Circle logo" class="footer-logo">
+                    <p class="footer-info-text">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                </div>
+                <aside class="footer-menu">
+                    <a href="#" class="footer-link">Team</a>
+                    <a href="#" class="footer-link">Services</a>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Press</a>
+                    <a href="#" class="footer-link">Projects</a>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </aside>
+            </div>
+        </footer>
 
         <script src="./scripts/script.js"></script>
     </body>
