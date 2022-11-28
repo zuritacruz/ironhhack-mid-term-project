@@ -627,6 +627,69 @@ body {
     font-size: 17px;
 }
 
+/* ----------------- PROJECT INFO PAGE ------------------  */
+/* Project Info Section  */
+.project-info-heading {
+    font-size: 40px;
+    line-height: 44px;
+    margin: 20px 0 10px;
+}
+
+.project-info-heading-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+.project-info-subheading {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #6b708d;
+}
+
+.project-info-date {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-info-date-text {
+    margin: 0;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.project-info-date-day {
+    margin: 0;
+    color: #6b708d;
+    font-size: 20px;
+}
+
+.project-info-img {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: 444px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.project-info-content {
+    margin-top: 70px;
+}
+
+.project-info-text {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.projects-info-projects-section {
+    margin-top: 70px;
+}
 
 
 /* ----------------- MEDIA QUERIES ------------------ */
@@ -849,6 +912,26 @@ body {
         flex-grow: 1;
         margin-left: 8px;
     }
+
+    /* ----------------- PROJECT INFO PAGE ------------------  */
+    /* Project Info Section  */
+    .project-info-heading {
+        font-size: 60px;
+    }
+
+    .project-info-heading-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .project-info-subheading {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .project-info-img {
+        margin-top: 80px;
+    }
 }
 
 /* Large devices (desktops) */
@@ -990,6 +1073,22 @@ body {
         max-width: 1100px;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    /* ----------------- PROJECT INFO PAGE ------------------  */
+    /* Project Info Section  */
+    .project-info-section {
+        margin-top: 70px;
+    }
+
+    .project-info-container {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .projects-info-projects-section {
+        margin-top: 70px;
     }
 }
 
