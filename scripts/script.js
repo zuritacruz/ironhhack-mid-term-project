@@ -10,8 +10,6 @@ const beerCollection = async() => {
     }
 }
 
-
-
 const paintData = (data) => {
     const randomNums = [];
     while (randomNums.length < 3) {
@@ -51,7 +49,5 @@ const paintData = (data) => {
     const beerTheeText = data[randomNums[2]].tagline;
     thirdProjectText.innerText = `${beerTheeText}`;
 }
-
-
 
 beerCollection();
