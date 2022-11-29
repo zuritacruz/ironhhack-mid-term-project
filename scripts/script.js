@@ -4,6 +4,7 @@ const beerCollection = async() => {
         const data = await response.json();
         console.log(data)
         paintData(data);
+
     } catch(error) {
         return error;
     }
@@ -12,35 +13,45 @@ const beerCollection = async() => {
 
 
 const paintData = (data) => {
+    const randomNums = [];
+    while (randomNums.length < 3) {
+        const random = Math.floor(Math.random() * data.length);
+        if (data[random].name.length <= 20 && data[random].tagline.length <= 30 && !randomNums.includes(random)) {
+            randomNums.push(random)
+        }
+    }
+
     const firstProjectImg = document.querySelector('.first-project .project-box-img');
-    const beerOneImg = data[9].image_url;
+    const beerOneImg = data[randomNums[0]].image_url;
     firstProjectImg.src=`${beerOneImg}`;
     const firstProjectTitle = document.querySelector('.first-project .project-box-heading');
-    const beerOneTitle = data[9].name;
+    const beerOneTitle = data[randomNums[0]].name;
     firstProjectTitle.innerText = `${beerOneTitle}`;
     const firstProjectText = document.querySelector('.first-project .project-box-text');
-    const beerOneText = data[9].tagline;
+    const beerOneText = data[randomNums[0]].tagline;
     firstProjectText.innerText = `${beerOneText}`;
 
     const secondProjectImg = document.querySelector('.second-project .project-box-img');
-    const beerTwoImg = data[12].image_url;
+    const beerTwoImg = data[randomNums[1]].image_url;
     secondProjectImg.src=`${beerTwoImg}`;
     const secondProjectTitle = document.querySelector('.second-project .project-box-heading');
-    const beerTwoTitle = data[12].name;
+    const beerTwoTitle = data[randomNums[1]].name;
     secondProjectTitle.innerText = `${beerTwoTitle}`;
     const secondProjectText = document.querySelector('.second-project .project-box-text');
-    const beerTwoText = data[12].tagline;
+    const beerTwoText = data[randomNums[1]].tagline;
     secondProjectText.innerText = `${beerTwoText}`;
 
     const thirdProjectImg = document.querySelector('.third-project .project-box-img');
-    const beerTheeImg = data[24].image_url;
+    const beerTheeImg = data[randomNums[2]].image_url;
     thirdProjectImg.src=`${beerTheeImg}`;
     const thirdProjectTitle = document.querySelector('.third-project .project-box-heading');
-    const beerTheeTitle = data[24].name;
+    const beerTheeTitle = data[randomNums[2]].name;
     thirdProjectTitle.innerText = `${beerTheeTitle}`;
     const thirdProjectText = document.querySelector('.third-project .project-box-text');
-    const beerTheeText = data[24].tagline;
+    const beerTheeText = data[randomNums[2]].tagline;
     thirdProjectText.innerText = `${beerTheeText}`;
 }
+
+
 
 beerCollection();
